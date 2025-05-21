@@ -1,0 +1,46 @@
+(define (problem problem_38)
+
+(:domain visitall)
+
+(:objects
+	obj0 obj1 obj2 obj3 obj4 obj5 obj6 obj7 obj8 obj9 obj10 - place
+)
+
+(:init
+	(at_robot obj0)
+	(connected obj0 obj1)
+	(connected obj0 obj3)
+	(connected obj0 obj9)
+	(connected obj1 obj2)
+	(connected obj1 obj3)
+	(connected obj1 obj4)
+	(connected obj2 obj1)
+	(connected obj2 obj3)
+	(connected obj2 obj4)
+	(connected obj3 obj1)
+	(connected obj3 obj2)
+	(connected obj3 obj8)
+	(connected obj4 obj2)
+	(connected obj4 obj3)
+	(connected obj4 obj9)
+	(connected obj5 obj0)
+	(connected obj5 obj2)
+	(connected obj6 obj0)
+	(connected obj6 obj2)
+	(connected obj6 obj5)
+	(connected obj7 obj1)
+	(connected obj7 obj4)
+	(connected obj9 obj10)
+	(connected obj10 obj7)
+)
+
+(:goal (and
+	(visited obj1)
+	(visited obj2)
+	(visited obj3)
+	(visited obj4)
+	(visited obj7)
+	(visited obj9)
+	(visited obj10)
+))
+)

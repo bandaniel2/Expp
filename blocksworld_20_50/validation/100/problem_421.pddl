@@ -1,0 +1,24 @@
+(define (problem problem_421)
+
+(:domain BLOCKS)
+
+(:objects
+	obj0 obj1 obj2 obj3 - block
+)
+
+(:init
+	(clear obj0)
+	(clear obj1)
+	(clear obj3)
+	(handempty)
+	(on obj3 obj2)
+	(ontable obj0)
+	(ontable obj1)
+	(ontable obj2)
+)
+
+(:goal (and
+	(on obj0 obj1)
+	(on obj3 obj0)
+))
+)
