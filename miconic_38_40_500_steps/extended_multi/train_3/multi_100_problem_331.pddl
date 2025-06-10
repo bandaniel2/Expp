@@ -1,0 +1,51 @@
+(define (problem problem_331)
+
+(:domain miconic)
+
+(:objects
+	obj0 obj1 obj4 obj5 obj7 obj17 - floor
+	obj2 obj3 obj6 obj8 obj9 obj10 obj11 obj12 obj13 obj14 obj15 obj16 obj18 obj19 obj20 - passenger
+)
+
+(:init
+	(above obj0 obj1)
+	(above obj4 obj0)
+	(above obj5 obj4)
+	(above obj7 obj5)
+	(above obj17 obj7)
+	(at obj2 obj1)
+	(at obj3 obj1)
+	(at obj6 obj1)
+	(at obj8 obj7)
+	(at obj9 obj5)
+	(at obj10 obj0)
+	(at obj11 obj5)
+	(at obj12 obj1)
+	(at obj13 obj5)
+	(at obj14 obj5)
+	(at obj15 obj7)
+	(at obj16 obj4)
+	(at obj18 obj1)
+	(at obj19 obj17)
+	(at obj20 obj17)
+	(lift_at obj4)
+	(lift_empty)
+)
+
+(:goal (and
+	(at obj2 obj1)
+	(at obj3 obj1)
+	(at obj6 obj1)
+	(at obj8 obj7)
+	(at obj9 obj7)
+	(at obj10 obj4)
+	(at obj11 obj5)
+	(at obj12 obj1)
+	(at obj14 obj4)
+	(at obj15 obj7)
+	(at obj16 obj5)
+	(at obj18 obj1)
+	(at obj19 obj17)
+	(at obj20 obj17)
+))
+)
